@@ -1,0 +1,56 @@
+/*
+Color Palette: https://colorhunt.co/palette/92c7cfaad7d9fbf9f1e5e1da
+*/
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 20px;
+  background-color: #E5E1DA; /* Fondo principal */
+  color: #252A34; /* Texto oscuro */
+}
+
+input,
+button {
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: #FBF9F1; /* Color de fondo para input y button */
+  color: #252A34; /* Texto oscuro para input y button */
+  border: 1px solid #AAD7D9; /* Borde para separar del fondo */
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #92C7CF; /* Cambia el color al pasar el ratón */
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.navbar {
+  overflow: hidden;
+  /*background-color: #AAD7D9;  Color de fondo para la barra de navegación */
+  text-align: center; /* Centrar el texto en el navbar */
+}
+
+.navbar a {
+  display: inline-block; /* Convertir a elementos de bloque en línea para centrar */
+  color: #252A34; /* Texto oscuro en el navbar */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #92C7CF; /* Fondo para los enlaces en el navbar */
+  border-radius: 5px;
+  margin: 0 5px; /* Añadido margen a cada lado para separar los enlaces */
+}
+
+.navbar a:hover {
+  background-color: #FBF9F1; /* Cambia el color al pasar el ratón */
+  color: #252A34; /* Cambia el texto al pasar el ratón */
+}
