@@ -51,10 +51,6 @@ const App: React.FC = function () {
     setTasksList(updatedTasksList)
     localStorage.setItem('listaTareas', JSON.stringify(updatedTasksList))
     showTasksList()
-
-    // Clear the input fields
-    //setDescription('');
-    //setPrice('');
   }
 
   function showTasksList() {

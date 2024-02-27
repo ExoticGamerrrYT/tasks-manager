@@ -10,3 +10,6 @@
 
 - Cleaned the code.
 - Changed notes.png image location.
+
+### 0.4
+- Fixed mobile view bug with buttons.

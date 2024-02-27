@@ -34,8 +34,7 @@ li {
 }
 
 .navbar {
-  overflow: hidden;
-  /*background-color: #AAD7D9;  Color de fondo para la barra de navegación */
+  overflow: visible;
   text-align: center; /* Centrar el texto en el navbar */
 }
 
@@ -48,6 +47,7 @@ li {
   background-color: #92c7cf; /* Fondo para los enlaces en el navbar */
   border-radius: 5px;
   margin: 0 5px; /* Añadido margen a cada lado para separar los enlaces */
+  margin-top: 10px;
 }
 
 .navbar a:hover {
