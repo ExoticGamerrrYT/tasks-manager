@@ -4,12 +4,16 @@ import './App.css'
 interface Task {
   description: string
   price: number
+  date: number
+  month: number
 }
 
 const App: React.FC = function () {
   const [description, setDescription] = useState<string>('')
   const [price, setPrice] = useState<number | ''>('')
   const [tasksList, setTasksList] = useState<Task[]>([])
+
+  const now = new Date()
 
   useEffect(function () {
     // Show tasks list when the component mounts
@@ -32,6 +36,10 @@ const App: React.FC = function () {
   }
 
   function addTask() {
+    const day = now.getDate()
+    const month = now.getMonth()
+    // console.log(day)
+
     if (!description.trim()) {
       alert('Por favor, ingresa una descripción para la tarea.')
       return
@@ -45,6 +53,8 @@ const App: React.FC = function () {
     const task: Task = {
       description,
       price: parseFloat(price as unknown as string),
+      date: day,
+      month: month
     }
 
     const updatedTasksList = [...tasksList, task]
@@ -123,8 +133,10 @@ const App: React.FC = function () {
             return (
               <li key={index}>
                 <span>
+                  {/* How names are displayed in the list (month is +1 bc it starts from 0) */}
                   {task.description} -{' '}
                   {task.price !== null ? `€${task.price.toFixed(2)}` : 'Price not available'}
+                  {` - Fecha: ${task.date}/${task.month + 1}`}
                 </span>
                 <span
                   style={{ cursor: 'pointer' }}

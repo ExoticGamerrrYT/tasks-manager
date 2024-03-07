@@ -13,3 +13,7 @@
 
 ### 0.4
 - Fixed mobile view bug with buttons.
+
+### 0.5
+- Changed font to Inter.
+- Added date in the list (day + month)
